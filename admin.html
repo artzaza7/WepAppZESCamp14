@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page | Chanakan Srisarutiporn </title>
+    <link rel="stylesheet" href="styleAdmin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- SweetAlert2 สำหรับการตกแต่ง Box Alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Upload your file</h3>
+        <div class="drag-area">
+            <div class="icon">
+                <i class="fas fa-images"></i>
+            </div>
+
+            <span class="header"> Drag & Drop</span>
+            <span class="header">or <span class="button">browse</span></span>
+            <input type="file" hidden>
+            <span class="support">Supports: JPEG, JPG, PNG</span>
+        </div>
+
+        <div class="inputText">
+            <label class="inputText">Name of image</label>
+            <input type="text" placeholder="Enter name of image" class="inputText" id="nameOfImage">
+            <label class="inputText">Description</label>
+            <input type="text" placeholder="Enter Description" class="inputText" id="description">
+            <label class="inputText">Price(Bath)</label>
+            <input type="text" placeholder="Enter Price" class="inputText" id="price">
+            <button type="button" class="inputText" id="uploadImage">+</button>
+        </div>
+    </div>
+
+    <div class="containerProductList">
+        <!-- Insert Menu Form Database -->
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script> <!-- เพิ่ม  Library -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script><!-- เพิ่ม  Library -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script> <!-- เพิ่ม  Library -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script> <!-- เพิ่ม  Library -->
+
+    <script src="firebaseConfig.js"></script> <!-- เปิดใช้งานไฟล์ firebaseConfig.js -->
+    <script src="scriptAdmin.js"></script>
+
+
+</body>
+
+</html>

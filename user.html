@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Page | Chanakan Srisarutiporn</title>
+    <link rel="stylesheet" href="styleUser.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="nav container">
+            <!-- <a href="#" class="logo">Username</a> -->
+            <span class="logo" id="username">Username</span>
+            <!-- Cart Icon -->
+            <i class='bx bx-shopping-bag' id="cart-icon"></i>
+            <!-- Cart -->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+
+                <div class="cart-content">
+                    <!-- Adding To Cart by clicked -->
+                    
+                </div>
+                <!-- Total -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">0 Bath</div>
+                </div>
+                <!-- Buy Button -->
+                <button type="button" class="btn-buy">Buy Now</button>
+                <!-- Cart Close -->
+                <i class='bx bxs-x-square' id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="shop container">
+        <h2 class="section-title">Shop Products</h2>
+        <div class="shop-content">
+            <!-- Adding Real-time Product -->
+
+        </div>
+    </section>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script> <!-- เพิ่ม  Library -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script><!-- เพิ่ม  Library -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script> <!-- เพิ่ม  Library -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script> <!-- เพิ่ม  Library -->
+
+    <script src="firebaseConfig.js"></script> <!-- เปิดใช้งานไฟล์ firebaseConfig.js -->
+    <script src="scriptUser.js"></script>
+
+</body>
+
+
+</html>

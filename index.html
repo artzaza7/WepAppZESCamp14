@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page | Chanakan Srisarutiporn</title>
+    <link rel="stylesheet" href="styleLogin.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+    <div class="center">
+        <h1>Login</h1>
+        <form>
+            <div class="txt_field">
+                <input id="email" type="text" required name="saveEmail">
+                <label>Email</label>
+            </div>
+            <div class="txt_field">
+                <input id="password" type="password" required>
+                <label>Password</label>
+            </div>
+            <button id="loginButton" type="button">Login</button>
+            <div class="signup_Link">
+                Not a member? <a href="RegisterPage.html">SignUp</a>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script> <!-- เพิ่ม  Library -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script><!-- เพิ่ม  Library -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script> <!-- เพิ่ม  Library -->
+
+    <script src="firebaseConfig.js"></script> <!-- เปิดใช้งานไฟล์ firebaseConfig.js -->
+    <script src="loginScript.js"></script>
+
+
+</body>
+
+</html>
